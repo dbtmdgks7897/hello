@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+{{>layout/header}}
+    <h2>음식 리스트</h2>
+
+    <table class="table table-dark table-hover">
+        <thead>
+        <tr>
+            <th>음식</th>
+            <th>이미지</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#flist}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{img}}</td>
+        </tr>
+        {{/flist}}
+        </tbody>
+    </table>
+{{>layout/footer}}
+</html>
