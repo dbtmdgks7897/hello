@@ -5,6 +5,7 @@ import com.example.hello.domain.search.TbSearch;
 import com.example.hello.service.food.FoodService;
 import com.example.hello.service.search.SearchService;
 import com.example.hello.utils.NaverMovieApi;
+import com.example.hello.web.dto.MovieRankResponseDto;
 import com.example.hello.web.dto.RandFoodResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -52,7 +53,7 @@ public class IndexController {
 
     @GetMapping("movie")
     public String movie(Model model){
-        List<String> list = NaverMovieApi.movie();
+        List<MovieRankResponseDto> list = NaverMovieApi.movie();
         model.addAttribute("movieList", list);
         return "movie";
     }
