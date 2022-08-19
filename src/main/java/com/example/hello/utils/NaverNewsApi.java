@@ -11,8 +11,8 @@ import java.util.Map;
 
 public class NaverNewsApi{
     public static String newsApi(String search) {
-        String clientId = "wr49D7wl8PiTIz4of0Dv"; //애플리케이션 클라이언트 아이디값"
-        String clientSecret = "HYQG08sKIB"; //애플리케이션 클라이언트 시크릿값"
+        String clientId = ""; //애플리케이션 클라이언트 아이디값"
+        String clientSecret = ""; //애플리케이션 클라이언트 시크릿값"
 
 
         String text = null;
